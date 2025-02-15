@@ -22,12 +22,14 @@ def extract_time(text):
 
 if __name__ == '__main__':
     sample_text = '''
-        Contact us at support@example.com or sales@example.co.uk.
-        Visit our website at https://www.example.com or http://example.org/page.
-        Call us at (123) 456-7890, 123-456-7890, 123.456.7890, or +1 987-654-3210.
-        The event starts at 14:30 and ends at 2:30 PM.
-        Invalid email: user@.com and malformed URL: http://example
-        Random text with no matches.
+    Here are some emails: user@example.com, firstname.lastname@company.co.uk.
+    URLs: https://www.example.com, http://subdomain.example.org/page.
+    Phone numbers: (123) 456-7890, 123-456-7890, 123.456.7890.
+    Credit card numbers: 1234 5678 9012 3456, 1234-5678-9012-3456.
+    Time formats: 14:30, 2:30 PM.
+    HTML tags: <p>, <div class="example">, <img src="image.jpg" alt="description">.
+    Hashtags: #example, #ThisIsAHashtag.
+    Currency: $19.99, $1,234.56.
     '''
 
     print("Emails Found:", extract_emails(sample_text) or "None")
