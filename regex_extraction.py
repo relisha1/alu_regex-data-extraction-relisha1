@@ -12,7 +12,7 @@ def extract_urls(text):
 
 def extract_phone_numbers(text):
     """Extracts phone numbers in different formats, including international numbers."""
-  pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+    pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
     return re.findall(pattern, text)
 
 def extract_time(text):
